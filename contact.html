@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Local Pet Adoption Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Local Pet Adoption Service</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="adopt.html">Available Pets</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <h2>Contact Us</h2>
+            
+            <p>Interested in adopting a pet or have questions about our services? Please fill out the form below and we'll get back to you as soon as possible.</p>
+            
+            <h3>Adoption Application Form</h3>
+            
+            <form action="/submit" method="post">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+                <br><br>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <br><br>
+                
+                <label for="pet-interest">Which pet are you interested in?</label>
+                <select id="pet-interest" name="pet-interest">
+                    <option value="">Select a pet</option>
+                    <option value="max">Max - Golden Retriever Mix</option>
+                    <option value="luna">Luna - Tabby Cat</option>
+                    <option value="buddy">Buddy - Labrador Mix</option>
+                    <option value="whiskers">Whiskers - Persian Mix</option>
+                    <option value="charlie">Charlie - Beagle</option>
+                    <option value="mittens">Mittens - Siamese Mix</option>
+                    <option value="other">Other</option>
+                </select>
+                <br><br>
+                
+                <label>Have you owned a pet before?</label>
+                <input type="radio" id="yes-pet" name="previous-pet" value="yes">
+                <label for="yes-pet">Yes</label>
+                <input type="radio" id="no-pet" name="previous-pet" value="no">
+                <label for="no-pet">No</label>
+                <br><br>
+                
+                <label for="message">Additional Information:</label>
+                <textarea id="message" name="message" rows="5" cols="40"></textarea>
+                <br><br>
+                
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree">I agree to provide a loving and permanent home for the pet</label>
+                <br><br>
+                
+                <button type="submit">Submit Application</button>
+                <button type="reset">Reset Form</button>
+            </form>
+            
+            <h3>Other Ways to Reach Us</h3>
+            
+            <ul>
+                <li>Email: info@localpetadoption.org</li>
+                <li>Phone: (555) 123-4567</li>
+                <li>Address: 123 Pet Adoption Lane, City, State 12345</li>
+                <li>Hours: Monday-Saturday, 9 AM - 6 PM</li>
+            </ul>
+        </main>
+        
+        <footer>
+            <p>Contact us: info@localpetadoption.org | Phone: (555) 123-4567</p>
+            <p>&copy; 2024 Local Pet Adoption Service. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
